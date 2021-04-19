@@ -13,11 +13,13 @@ allow for fast access. For this MP, implement the following operations for the s
 5. intersection
 6. difference
 7. power set
+
 Implement the set as a template or generic that should allow the user to create different types of sets.
-● set <int> s;
-● set <string> s1;
-● set < set<int> > s2;
+- set <int> s;
+- set <string> s1;
+- set < set<int> > s2;
 For our purpose, we are to include int, double, char, string, set, and object.
+
 Input File
 The input file (named mpa2.in) will contain a number of lines. The first line is the number of test
 cases. Each test case will contain a series of lines as well. The first line will contain a number
@@ -29,11 +31,13 @@ The following are the different types:
 4. string
 5. set
 6. object
+
 If the type is of type set (5), then a second number will be found specifying what kind of a set its
 elements are. Take for instance the sample below:
 1
 5 1
 This means that for this test case, the sets will contain sets of integers as elements.
+
 The next line will contain the default elements (separated by a space) of the first set followed by
 another line containing the default elements (separated by a space) of the second set.
 Another line with one number will follow. This number, say x, represents the number of operations that
@@ -54,9 +58,9 @@ which set the item is to be inserted and the item to be inserted. The same appli
 For 3 (subset), no additional items will be found. This operation will simply verify whether the first set
 is a subset of the second.
 The same goes for 4 (union), 5 (intersection), and 6 (difference).
-● 4 : union of the two sets
-● 5 : intersection of the two sets
-● 6 : 1 - 2 (set difference)
+- 4 : union of the two sets
+- 5 : intersection of the two sets
+- 6 : 1 - 2 (set difference)
 For operation 7 (power set), a number will follow it (separated by a space) specifying for which set the
 operation is to be performed (1 or 2).
 Below is a sample input file.
