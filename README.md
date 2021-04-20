@@ -67,43 +67,76 @@ The same goes for 4 (union), 5 (intersection), and 6 (difference).
 For operation 7 (power set), a number will follow it (separated by a space) specifying for which set the
 operation is to be performed (1 or 2).
 Below is a sample input file.
+
 3
+
 1
+
 1 5 7 8
+
 10 -2 4 5
+
 3
+
 1 1 8
+
 1 2 7
+
 3
+
 4
+
 hello abcd wxyz
+
 world wxyz abcd lmno
+
 4
+
 1 1 world
+
 2 2 world
+
 5
+
 7 2
+
 5 1
+
 {1,2,3} {1,2} {7,8,9}
+
 {1,2} {1,2,5} {7,8,9,10}
+
 2
+
 2 2 {7,8,9,10}
+
 7 2
 
 Output file
 For each operation performed or executed, a line of output should be printed to a file named
-<lastname>1.out.● for insert and remove, display the contents of the set affected
-● for subset, simply print true or false, depending on the verification
-● for union, intersection, difference and power set, the contents of the resulting set
+<lastname>1.out.
+  - for insert and remove, display the contents of the set affected
+  - for subset, simply print true or false, depending on the verification
+  - for union, intersection, difference and power set, the contents of the resulting set
+
 Below is a sample output file of the sample input file above.
+
 {1,5,7,8}
+
 {10,-2,4,5,7}
+
 false
+
 {hello,abcd,wxyz,world}
+
 {wxyz,abcd,lmno}
+
 {abcd,wxyz}
+
 {empty,{wxyz},{abcd},{lmno},{wxyz,abcd},{wxyz,lmno},{abcd,lmno},{wxyz,abcd,lmno}}
+
 {{1,2},{1,2,5}}
+
 {empty,{{1,2}},{{1,2,5}},{{1,2},{1,2,5}}}
 
 # Machine Problem 2: Paparazzi, Grammar Nazi
@@ -138,6 +171,7 @@ The input is going to be a file. This file will contain a number of lines. This 
 be asked from the user. The first line of the input file will be a positive number. This positive, say c,
 represents the number of test cases there are in the file. The actual test cases will follow in the next
 line/s.
+
 Output
 The output is going to be a file. The file is going to contain c lines, c being the number of test cases. If
 the test case is valid, print "VALID <type>." where <type> is any of the following:
@@ -148,22 +182,33 @@ Constraints and other instructions
 - No use of built-in regex
 
 Sample Input File:
+
 4
+
 int x, y, z = 10;
+
 double a
+
 int function();
+
 INT function2(void);
+
 int solve(int,char,double x,float,int,int);
 
 Sample Output File:
+
 VALID VARIABLE DECLARATION
+
 INVALID VARIABLE DECLARATION
+
 INVALID FUNCTION DECLARATION
+
 VALID FUNCTION DECLARATION
 
 # Machine Problem 3: Smiling Must me a Regular Expression
 
 union
+
 The symbol ‘+’ will be used to denote union or “OR”. Single symbols or concatenated strings may
 surround it.
 - a + b
@@ -171,6 +216,7 @@ surround it.
 - aba + bba + e
 
 concatenation
+
 No symbol will be used for concatenation. Symbols that are beside each other are considered to have
 been concatenated. And possibly enclosed with parentheses
 - aaabbb
@@ -179,6 +225,7 @@ been concatenated. And possibly enclosed with parentheses
 - a(a+b)a
 
 Kleene star
+
 The use of the Kleene is limited to single symbols and grouped/concatenated symbols. It will not be
 used with “OR-ed” symbols or strings. And “starring” starred grouped/concatenated symbols is not in
 scope as well.
@@ -196,38 +243,67 @@ expression generates the string (yes) or not (no) ). What follows next are the a
 tested.
 
 Sample Input:
+
 3
+
 a*b*
+
 3
+
 aaabbbbbb
+
 aaaaaa
+
 bbbbbaaaaa
+
 a + b
+
 2
+
 a
+
 b
+
 (ab)*(aa + bb)
+
 6
+
 aa
+
 e
+
 abababbb
+
 abababaaaa
+
 aaaaaabbbbbb
+
 bbbbbbababab
 
 Output
 Simply print “yes” or “no” in one line for every test case. Below is the sample output of the sample
 input above.
+
 yes
+
 yes
+
 no
+
 yes
+
 yes
+
 yes
+
 yes
+
 yes
+
 no
+
 no
+
 no
 
 # Machine Problem 4: Paparazzi, Grammar Nazi 2.0
@@ -254,17 +330,27 @@ the test case is valid, print "VALID <type>." where <type> is any of the followi
 - FUNCTION DECLARATION
 
 Sample Input File:
+
 4
+
 int x, y, z = 10;
+
 double a
+
 int function();
+
 INT function2(void);
+
 int solve(int,char,double x,float,int,int);
 
 Sample Output File:
+
 VALID VARIABLE DECLARATION
+
 INVALID VARIABLE DECLARATION
+
 INVALID FUNCTION DECLARATION
+
 VALID FUNCTION DECLARATION
 
 Machine Problem 5: Paparazzi, Grammar Nazi 3.0
@@ -290,19 +376,33 @@ operations
 No control structures will be in scope for this MP. There will be no input/output statements as well.
 
 Samples
+
 void test(){
+
 }
+
 int square(int x){
+
 int ans;
+
 ans = x * x;
+
 return ans;
+
 }
+
 int addition(int a, int b){
+
 return a+b;
+
 }
+
 int compute(int n){
+
 int val = (3*(n - 5)) - 49;
+
 return val;
+
 }
 
 Input
@@ -318,24 +418,42 @@ the test case is valid, print "VALID <type>." where <type> is any of the followi
 - FUNCTION DECLARATION
 - FUNCTION DEFINITION
 Sample Input File
+
 6
+
 int x, y, z = 10;
+
 double a
+
 int function();int func(int){
+
 int x = 10;
+
 }
+
 int square(int x){
+
 return x * x;
+
 }
+
 INT function2(void);
+
 int solve(int,char,double x,float,int,int);
 
+
 Sample Output File
+
 VALID VARIABLE DECLARATION
+
 INVALID VARIABLE DECLARATION
+
 INVALID FUNCTION DEFINITION
+
 VALID FUNCTION DEFINITION
+
 INVALID FUNCTION DECLARATION
+
 VALID FUNCTION DECLARATION
 
 # Machine Problem 6: Turing Machine Simulation
