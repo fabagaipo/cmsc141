@@ -355,4 +355,5 @@ the length of the string)
 - 1111111 - 111 = 1111
  Multiplication
 - 11 x 111 = 111111
+
 The simulation may be done on the console or with any graphics
