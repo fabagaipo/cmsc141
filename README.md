@@ -162,7 +162,8 @@ Samples
 - void compute(void);
 - int square(int);
 - int power(int,int);
-- char toLower(char);● double squareRoot(float);
+- char toLower(char);
+- double squareRoot(float);
 - int gcd(int,int), lcm(int,int);
 - int isPrime(int n);
 
@@ -314,7 +315,8 @@ Samples
 - int square(int);
 - int power(int,int);
 - char toLower(char);
-- double squareRoot(float);● int gcd(int,int), lcm(int,int);
+- double squareRoot(float);
+- int gcd(int,int), lcm(int,int);
 - int isPrime(int n);
 
 Input
@@ -373,6 +375,7 @@ following:
 - assignment statements with arithmetic expressions that utilize the parentheses for grouping
 operations
 - return statements (all kinds of statements that are in scope for function definition
+
 No control structures will be in scope for this MP. There will be no input/output statements as well.
 
 Samples
@@ -417,6 +420,7 @@ the test case is valid, print "VALID <type>." where <type> is any of the followi
 - VARIABLE DECLARATION
 - FUNCTION DECLARATION
 - FUNCTION DEFINITION
+
 Sample Input File
 
 6
