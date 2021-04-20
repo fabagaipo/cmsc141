@@ -53,14 +53,17 @@ operations:
 5. intersection
 6. difference
 7. power set
+
 For 1 (insert), two items will follow (separated by a space), a number (either 1 or 2) determining in
 which set the item is to be inserted and the item to be inserted. The same applies for 2 (remove).
 For 3 (subset), no additional items will be found. This operation will simply verify whether the first set
 is a subset of the second.
+
 The same goes for 4 (union), 5 (intersection), and 6 (difference).
-- 4 : union of the two sets
-- 5 : intersection of the two sets
-- 6 : 1 - 2 (set difference)
+4 : union of the two sets
+5 : intersection of the two sets
+6 : 1 - 2 (set difference)
+
 For operation 7 (power set), a number will follow it (separated by a space) specifying for which set the
 operation is to be performed (1 or 2).
 Below is a sample input file.
@@ -86,6 +89,7 @@ world wxyz abcd lmno
 2
 2 2 {7,8,9,10}
 7 2
+
 Output file
 For each operation performed or executed, a line of output should be printed to a file named
 <lastname>1.out.● for insert and remove, display the contents of the set affected
@@ -107,24 +111,28 @@ false
 Multiple declarations, including those with initializations, are in scope. This also means that identifiers
 have to be checked. They should follow the naming rule of c, i.e. they can start with '_' or any letter
 from the English alphabet, followed by 0 or more alpha-numeric characters, including the '_'.
+
 Samples
-● int x;
-● char c,h;
-● float pi = 3.1416;
-● double x, y, z = 6.022140857;
+- int x;
+- char c,h;
+- float pi = 3.1416;
+- double x, y, z = 6.022140857;
+
 Function declaration
 In a similar fashion, what will be in scope are functions returning primitive type values only. In addition,
 functions that do not return any value, i.e. declared as void, will be in scope as well. Functions with
 and without any argument list are in scope. And like in variable declarations, multiple function
 declarations are in scope, too.
+
 Samples
-● void display();
-● void compute(void);
-● int square(int);
-● int power(int,int);
-● char toLower(char);● double squareRoot(float);
-● int gcd(int,int), lcm(int,int);
-● int isPrime(int n);
+- void display();
+- void compute(void);
+- int square(int);
+- int power(int,int);
+- char toLower(char);● double squareRoot(float);
+- int gcd(int,int), lcm(int,int);
+- int isPrime(int n);
+
 Input
 The input is going to be a file. This file will contain a number of lines. This name of the input file should
 be asked from the user. The first line of the input file will be a positive number. This positive, say c,
@@ -133,17 +141,12 @@ line/s.
 Output
 The output is going to be a file. The file is going to contain c lines, c being the number of test cases. If
 the test case is valid, print "VALID <type>." where <type> is any of the following:
-● VARIABLE DECLARATION
-● FUNCTION DECLARATION
+- VARIABLE DECLARATION
+- FUNCTION DECLARATION
 Constraints and other instructions
-● Implement this using c, c++, java, or python
-● No use of built-in regex
-● You are to include all the references you have used in solving this MP. The references may
-be your old notes, online resources, etc. Include them in your source file as comments.
-● If you have any questions about the MP, post them in the appropriate forum's discussion
-board.
-● As an additional reference, please check the sample input file and output file provided for this
-MP.
+- Implement this using c, c++, java, or python
+- No use of built-in regex
+
 Sample Input File:
 4
 int x, y, z = 10;
@@ -151,6 +154,7 @@ double a
 int function();
 INT function2(void);
 int solve(int,char,double x,float,int,int);
+
 Sample Output File:
 VALID VARIABLE DECLARATION
 INVALID VARIABLE DECLARATION
@@ -165,6 +169,7 @@ surround it.
 - a + b
 - e+a + b
 - aba + bba + e
+
 concatenation
 No symbol will be used for concatenation. Symbols that are beside each other are considered to have
 been concatenated. And possibly enclosed with parentheses
@@ -172,6 +177,7 @@ been concatenated. And possibly enclosed with parentheses
 - ab
 - bbbbbb
 - a(a+b)a
+
 Kleene star
 The use of the Kleene is limited to single symbols and grouped/concatenated symbols. It will not be
 used with “OR-ed” symbols or strings. And “starring” starred grouped/concatenated symbols is not in
@@ -180,12 +186,15 @@ scope as well.
 - a*bb*
 - (ab)*
 - ((ab)(ba)*)* or ((aba)*(bab)*)* - FORMS LIKE THIS ARE NOT IN SCOPE
-- (a+b)* or (ab+ ba)* - FORMS LIKE THIS ARE NOT IN SCORE AS WELLInput
+- (a+b)* or (ab+ ba)* - FORMS LIKE THIS ARE NOT IN SCORE AS WELL
+
+Input
 The input file consists of a number of lines. The first line contains the number of test cases. The
 following lines contain the test cases. Each test case consists of the regular expression, followed by a
 number representing the number of strings that need to be verified or tested (whether the regular
 expression generates the string (yes) or not (no) ). What follows next are the actual strings to be
 tested.
+
 Sample Input:
 3
 a*b*
@@ -205,6 +214,7 @@ abababbb
 abababaaaa
 aaaaaabbbbbb
 bbbbbbababab
+
 Output
 Simply print “yes” or “no” in one line for every test case. Below is the sample output of the sample
 input above.
@@ -222,19 +232,6 @@ no
 
 # Machine Problem 4: Paparazzi, Grammar Nazi 2.0
 
-Multiple declarations, including those with initializations, are in scope. This also means that identifiers
-have to be checked. They should follow the naming rule of c, i.e. they can start with '_' or any letter
-from the English alphabet, followed by 0 or more alpha-numeric characters, including the '_'.
-Samples
-- int x;
-- char c,h;
-- float pi = 3.1416;
-- double x, y, z = 6.022140857;
-Function declaration
-In a similar fashion, what will be in scope are functions returning primitive type values only. In addition,
-functions that do not return any value, i.e. declared as void, will be in scope as well. Functions with
-and without any argument list are in scope. And like in variable declarations, multiple function
-declarations are in scope, too.
 Samples
 - void display();
 - void compute(void);
@@ -243,16 +240,19 @@ Samples
 - char toLower(char);
 - double squareRoot(float);● int gcd(int,int), lcm(int,int);
 - int isPrime(int n);
+
 Input
 The input is going to be a file. This file will contain a number of lines. This name of the input file should
 be asked from the user. The first line of the input file will be a positive number. This positive, say c,
 represents the number of test cases there are in the file. The actual test cases will follow in the next
 line/s.
+
 Output
 The output is going to be a file. The file is going to contain c lines, c being the number of test cases. If
 the test case is valid, print "VALID <type>." where <type> is any of the following:
 - VARIABLE DECLARATION
 - FUNCTION DECLARATION
+
 Sample Input File:
 4
 int x, y, z = 10;
@@ -260,6 +260,7 @@ double a
 int function();
 INT function2(void);
 int solve(int,char,double x,float,int,int);
+
 Sample Output File:
 VALID VARIABLE DECLARATION
 INVALID VARIABLE DECLARATION
@@ -268,20 +269,6 @@ VALID FUNCTION DECLARATION
 
 Machine Problem 5: Paparazzi, Grammar Nazi 3.0
 
-Multiple declarations, including those with initializations with arithmetic expressions, are in scope. This
-also means that identifiers have to be checked. They should follow the naming rule of c, i.e. they can
-start with '_' or any letter from the English alphabet, followed by 0 or more alpha-numeric characters,
-including the '_'.
-Samples
-- int x = 4+8-(4/2*(10-8)+249);
-- char c,h;
-- float pi = 3.1416;
-- double x, y, z = 6.022140857;
-Function declaration
-In a similar fashion, what will be in scope are functions returning primitive type values only. In addition,
-functions that do not return any value, i.e. declared as void, will be in scope as well. Functions with
-and without any argument list are in scope. And like in variable declarations, multiple function
-declarations are in scope, too.
 Samples
 - void display();
 - void compute(void);
@@ -290,6 +277,7 @@ Samples
 - char toLower(char);● double squareRoot(float);
 - int gcd(int,int), lcm(int,int);
 - int isPrime(int n);
+
 Function definition
 The same types of functions as those in function declaration are in scope. What will be interesting
 here is that the variable declaration described above are in scope in function definition, including the
@@ -300,6 +288,7 @@ following:
 operations
 - return statements (all kinds of statements that are in scope for function definition
 No control structures will be in scope for this MP. There will be no input/output statements as well.
+
 Samples
 void test(){
 }
@@ -315,11 +304,13 @@ int compute(int n){
 int val = (3*(n - 5)) - 49;
 return val;
 }
+
 Input
 The input is going to be a file. This file will contain a number of lines. This name of the input file should
 be asked from the user. The first line of the input file will be a positive number. This positive, say c,
 represents the number of test cases there are in the file. The actual test cases will follow in the next
 line/s.
+
 Output
 The output is going to be a file. The file is going to contain c lines, c being the number of test cases. If
 the test case is valid, print "VALID <type>." where <type> is any of the following:
@@ -338,6 +329,7 @@ return x * x;
 }
 INT function2(void);
 int solve(int,char,double x,float,int,int);
+
 Sample Output File
 VALID VARIABLE DECLARATION
 INVALID VARIABLE DECLARATION
@@ -346,7 +338,7 @@ VALID FUNCTION DEFINITION
 INVALID FUNCTION DECLARATION
 VALID FUNCTION DECLARATION
 
-Machine Problem 6: Turing Machine Simulation
+# Machine Problem 6: Turing Machine Simulation
 
 Simulate the Turing machine solutions of the following problems:
 - Palindrome over {0, 1}
