@@ -286,9 +286,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# References:
-# https://www.geeksforgeeks.org/copy-python-deep-copy-shallow-copy/
-# https://www.oreilly.com/library/view/python-cookbook/0596001673/ch05s18.html
-# https://coderbyte.com/algorithm/print-all-subsets-given-set
-# https://www.kite.com/python/answers/how-to-convert-each-line-in-a-text-file-into-a-list-in-python
