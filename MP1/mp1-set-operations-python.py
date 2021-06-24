@@ -41,7 +41,7 @@ class Set:
                 self.power(self.set1)
             elif int(self.items[index][1]) == 2:
                 self.power(self.set2)
-                
+
 # Set operators:
 
     # 1.1 Insert set to a set
@@ -89,16 +89,16 @@ class Set:
             if value in self.set1:
                 self.set1 = [item for item in self.set1 if item != value]
             else:
-                self.append("Not in set!")
+                self.append("empty")
             self.preformat(self.set1)
 
         if setter == 2:
             if value in self.set2:
                 self.set2 = [item for item in self.set2 if item != value]
             else:
-                self.append("Not in set!")
+                self.append("empty")
             self.preformat(self.set2)
-    
+
     # 3. Checks whether S1 is a subset of S2
     def subset(self):
         if len(self.set1) > len(self.set2):
@@ -114,7 +114,7 @@ class Set:
                 self.append("false")  # Returns true if a subset
             else:
                 self.append("true")   # Returns false if not a subset
-    
+
     # 4. Union of two sets (S1 U S2)
     def union(self):
         self.result = copy.copy(self.set1)
@@ -142,27 +142,25 @@ class Set:
             else:
                 continue
         self.preformat(self.result)
-        
+
     # 7. Power set given a set
     def power(self, val):
         init = ['empty']
-        for item in val:
-            init.append(item)
-        rest = (2**len(val))-len(init)
-        if rest == 1:
-            init.append(val)
-            self.preformat(init)
-        else:
-            init.append('None')
-            self.preformat(init)
+        listval = list(val)
+
+        for i in range(1, 2**len(listval)):
+            subset = []
+            for k in range(len(listval)):
+                if i & 1 << k:
+                    subset.append(listval[k])
+            init.append(subset)
+
+        self.preformat(init)
 
 # Other functons:
 
     # Function for set of sets
     def preformat(self, setter):
-        if self.data != 5:
-            self.format(setter)
-        else:
             tmpstr = str(setter)
             tmpstr = tmpstr.replace('[', '{')
             tmpstr = tmpstr.replace(']', '}')
@@ -170,18 +168,19 @@ class Set:
             if "'" in tmpstr:
                 tmpstr = tmpstr.replace("'", '')
             self.append(tmpstr)
-    
+
     # Function for set of data types
-    def format(self, lst):
+    def format(self, setList):
         string = '{'
-        for item in lst:
+        for item in setList:
             string += str(item) + ','
         string = string[:-1] + '}'
         self.append(string)
 
-    # Append results to output file
+    # Append results to output file and print on console
     def append(self, string):
-        with open('lastName.out', 'a') as file:
+        print(string)
+        with open('bagaipo.out', 'a') as file:
             file.write(string + '\n')
             file.close()
 
@@ -241,7 +240,7 @@ class Parser:
             self.parse(position-1)
 
     def checkType(self, datatype):
-        # checks datatype by number
+        # checks datatype of the following
         # 1. int
         # 2. double
         # 3. char
@@ -274,15 +273,15 @@ class Parser:
 
 # Main function
 def main():
-    fileinput = input("Enter input file: ")
+    fileinput = input()
     with open(fileinput) as inputfile:
         line = [ln.strip() for ln in inputfile]
 
-    open("lastName.out", 'w').close()
+    open("lastname.out", 'w').close()
     setp = Parser()
     setp.toList(line)
     setp.parse(0)
-    print("File has been made. Open lastName.out")
+    # print("File has been made. Open lastname.out")
 
 if __name__ == "__main__":
     main()
