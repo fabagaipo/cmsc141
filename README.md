@@ -1,5 +1,5 @@
 # cmsc141
-code list for cmsc 141 Automata Language Theory machine problems; c++ and python
+code list for cmsc 141 Automata Language Theory machine problems; python and java(?)
 
 # Machine Problem 1: Ready, Get, SET!
 
