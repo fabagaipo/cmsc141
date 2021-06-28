@@ -168,19 +168,16 @@ Samples
 - int isPrime(int n);
 
 Input
-The input is going to be a file. This file will contain a number of lines. This name of the input file should
-be asked from the user. The first line of the input file will be a positive number. This positive, say c,
-represents the number of test cases there are in the file. The actual test cases will follow in the next
-line/s.
+The input is entirely from standard I/O (console). It will contain a number of lines. The first input is a positive number. 
+This positive number, say c, represents the number of test cases there are. The actual test cases will follow in the next line/s.
 
 Output
-The output is going to be a file. The file is going to contain c lines, c being the number of test cases. If
-the test case is valid, print "VALID <type>." where <type> is any of the following:
+Print all output on the console (standard output). It should have c lines, c being the number of test cases. 
+  If the test case is valid, print "VALID <type>." where <type> is any of the following:
 - VARIABLE DECLARATION
 - FUNCTION DECLARATION
 Constraints and other instructions
 - Implement this using c, c++, java, or python
-- No use of built-in regex
 
 Sample Input File:
 
@@ -320,14 +317,14 @@ Samples
 - int isPrime(int n);
 
 Input
-The input is going to be a file. This file will contain a number of lines. This name of the input file should
-be asked from the user. The first line of the input file will be a positive number. This positive, say c,
-represents the number of test cases there are in the file. The actual test cases will follow in the next
-line/s.
+The input is entirely from standard I/O (console). It will contain a number of lines. The first input is a positive number. 
+This positive number, say c, represents the number of test cases there are. The actual test cases will follow in the next line/s. Each test (one line) case is composed of 2 
+parts. The first one is a number that represents the a type indicator. If it is a 1, then it should be a variable declaration. 
+If it is a 2, then it is supposed to be a function declaration. The type indicator is followed by the actual test case (they are separated by a space).
 
 Output
-The output is going to be a file. The file is going to contain c lines, c being the number of test cases. If
-the test case is valid, print "VALID <type>." where <type> is any of the following:
+Print all output on the console (standard output). It should have c lines, c being the number of test cases. 
+If the test case is valid, print "VALID <type>." where <type> is any of the following:
 - VARIABLE DECLARATION
 - FUNCTION DECLARATION
 
@@ -335,15 +332,13 @@ Sample Input File:
 
 4
 
-int x, y, z = 10;
+1 int x, y, z = 10;
 
-double a
+1 double a int function();
 
-int function();
+2 INT function2(void);
 
-INT function2(void);
-
-int solve(int,char,double x,float,int,int);
+2 int solve(int,char,double x,float,int,int);
 
 Sample Output File:
 
