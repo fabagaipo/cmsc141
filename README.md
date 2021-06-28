@@ -185,9 +185,7 @@ Sample Input File:
 
 int x, y, z = 10;
 
-double a
-
-int function();
+double a int function();
 
 INT function2(void);
 
