@@ -355,7 +355,7 @@ INVALID FUNCTION DECLARATION
 
 VALID FUNCTION DECLARATION
 
-Machine Problem 5: Paparazzi, Grammar Nazi 3.0
+# Machine Problem 5: Paparazzi, Grammar Nazi 3.0 (Did not make)
 
 Samples
 - void display();
@@ -460,7 +460,7 @@ INVALID FUNCTION DECLARATION
 
 VALID FUNCTION DECLARATION
 
-# Machine Problem 6: Turing Machine Simulation
+# Machine Problem 6: Turing Machine Simulation (Did not make)
 
 Simulate the Turing machine solutions of the following problems:
 - Palindrome over {0, 1}
