@@ -180,7 +180,7 @@ class Set:
     # Append results to output file and print on console
     def append(self, string):
         print(string)
-        with open('bagaipo.out', 'a') as file:
+        with open('lastname.out', 'a') as file:
             file.write(string + '\n')
             file.close()
 
