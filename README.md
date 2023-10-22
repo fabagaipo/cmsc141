@@ -67,7 +67,7 @@ The same goes for 4 (union), 5 (intersection), and 6 (difference).
 For operation 7 (power set), a number will follow it (separated by a space) specifying for which set the
 operation is to be performed (1 or 2).
 Below is a sample input file.
-
+```
 3
 
 1
@@ -111,7 +111,7 @@ world wxyz abcd lmno
 2 2 {7,8,9,10}
 
 7 2
-
+```
 Output file
 For each operation performed or executed, a line of output should be printed to a file named
 <lastname>1.out.
@@ -120,7 +120,7 @@ For each operation performed or executed, a line of output should be printed to 
   - for union, intersection, difference and power set, the contents of the resulting set
 
 Below is a sample output file of the sample input file above.
-
+```
 {1,5,7,8}
 
 {10,-2,4,5,7}
@@ -138,7 +138,7 @@ false
 {{1,2},{1,2,5}}
 
 {empty,{{1,2}},{{1,2,5}},{{1,2},{1,2,5}}}
-
+```
 # Machine Problem 2: Paparazzi, Grammar Nazi
 
 Multiple declarations, including those with initializations, are in scope. This also means that identifiers
@@ -180,7 +180,7 @@ Constraints and other instructions
 - Implement this using c, c++, java, or python
 
 Sample Input File:
-
+```
 4
 
 int x, y, z = 10;
@@ -190,9 +190,10 @@ double a int function();
 INT function2(void);
 
 int solve(int,char,double x,float,int,int);
+```
 
 Sample Output File:
-
+```
 VALID VARIABLE DECLARATION
 
 INVALID VARIABLE DECLARATION
@@ -200,7 +201,7 @@ INVALID VARIABLE DECLARATION
 INVALID FUNCTION DECLARATION
 
 VALID FUNCTION DECLARATION
-
+```
 # Machine Problem 3: Smiling Must me a Regular Expression
 
 union
@@ -239,7 +240,7 @@ expression generates the string (yes) or not (no) ). What follows next are the a
 tested.
 
 Sample Input:
-
+```
 3
 
 a*b*
@@ -275,11 +276,11 @@ abababaaaa
 aaaaaabbbbbb
 
 bbbbbbababab
-
+```
 Output
 Simply print “yes” or “no” in one line for every test case. Below is the sample output of the sample
 input above.
-
+```
 yes
 
 yes
@@ -301,7 +302,7 @@ no
 no
 
 no
-
+```
 # Machine Problem 4: Paparazzi, Grammar Nazi 2.0
 
 Samples
@@ -327,7 +328,7 @@ If the test case is valid, print "VALID <type>." where <type> is any of the foll
 - FUNCTION DECLARATION
 
 Sample Input File:
-
+```
 4
 
 1 int x, y, z = 10;
@@ -337,9 +338,9 @@ Sample Input File:
 2 INT function2(void);
 
 2 int solve(int,char,double x,float,int,int);
-
+```
 Sample Output File:
-
+```
 VALID VARIABLE DECLARATION
 
 INVALID VARIABLE DECLARATION
@@ -347,7 +348,7 @@ INVALID VARIABLE DECLARATION
 INVALID FUNCTION DECLARATION
 
 VALID FUNCTION DECLARATION
-
+```
 # Machine Problem 5: Paparazzi, Grammar Nazi 3.0 (Did not make)
 
 Samples
@@ -372,7 +373,7 @@ operations
 No control structures will be in scope for this MP. There will be no input/output statements as well.
 
 Samples
-
+```
 void test(){
 
 }
@@ -400,7 +401,7 @@ int val = (3*(n - 5)) - 49;
 return val;
 
 }
-
+```
 Input
 The input is going to be a file. This file will contain a number of lines. This name of the input file should
 be asked from the user. The first line of the input file will be a positive number. This positive, say c,
@@ -415,7 +416,7 @@ the test case is valid, print "VALID <type>." where <type> is any of the followi
 - FUNCTION DEFINITION
 
 Sample Input File
-
+```
 6
 
 int x, y, z = 10;
@@ -437,10 +438,10 @@ return x * x;
 INT function2(void);
 
 int solve(int,char,double x,float,int,int);
-
+```
 
 Sample Output File
-
+```
 VALID VARIABLE DECLARATION
 
 INVALID VARIABLE DECLARATION
@@ -452,7 +453,7 @@ VALID FUNCTION DEFINITION
 INVALID FUNCTION DECLARATION
 
 VALID FUNCTION DECLARATION
-
+```
 # Machine Problem 6: Turing Machine Simulation (Did not make)
 
 Simulate the Turing machine solutions of the following problems:
